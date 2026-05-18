@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.11.0",
+    "sdksVersions": {},
+    "version": "1.23.0",
+    "libraryName": "quick-links-personal-webpart",
+    "libraryId": "6e27540c-baac-4c89-9f5b-a79b3bc7b83a",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "quick-links-personal-webpart",
+    "solutionShortDescription": "quick-links-personal-webpart description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

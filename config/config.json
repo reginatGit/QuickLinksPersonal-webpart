@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "quick-links-custom-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/quickLinksCustomWp/QuickLinksCustomWpWebPart.js",
+          "manifest": "./src/webparts/quickLinksCustomWp/QuickLinksCustomWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "QuickLinksCustomWpWebPartStrings": "lib/webparts/quickLinksCustomWp/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "quick-links-personal-webpart-client-side-solution",
+    "id": "6e27540c-baac-4c89-9f5b-a79b3bc7b83a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "quick-links-personal-webpart description"
+      },
+      "longDescription": {
+        "default": "quick-links-personal-webpart description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "quick-links-personal-webpart Feature",
+        "description": "The feature that activates elements of the quick-links-personal-webpart solution.",
+        "id": "da34a262-d2e6-4c3f-990b-527b8a8fa288",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/quick-links-personal-webpart.sppkg"
+  }
+}
