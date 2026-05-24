@@ -1,0 +1,161 @@
+.quickLinkTile {
+  list-style: none;
+  align-self: start;
+  max-width: 100%;
+}
+
+.tileWrapper {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.tileLink {
+  padding: 12px 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.alignHLeft {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.alignHCenter {
+  align-items: center;
+  text-align: center;
+}
+
+.alignHRight {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.alignVTop {
+  justify-content: flex-start;
+}
+
+.alignVMiddle {
+  justify-content: center;
+}
+
+.alignVBottom {
+  justify-content: flex-end;
+}
+
+.tileLinkWithEdit {
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.presetFilled {
+  border: 1px solid transparent;
+}
+
+.presetOutlined {
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.presetSoft {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.presetGlass {
+  background: rgba(255, 255, 255, 0.55) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.themeAware {
+  color: var(--bodyText, #323130);
+}
+
+.hoverLift:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.98);
+}
+
+.hoverGlow:hover {
+  box-shadow: 0 0 0 1px rgba(0, 120, 212, 0.35), 0 8px 24px rgba(0, 120, 212, 0.18) !important;
+}
+
+.hoverScale:hover {
+  transform: scale(1.03);
+}
+
+.imageBadge {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.contentStack {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  gap: 4px;
+}
+
+.contentStackBottom {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.titleText {
+  line-height: 1.2;
+}
+
+.descriptionText {
+  font-weight: 400;
+  line-height: 1.25;
+  opacity: 0.95;
+  word-break: break-word;
+}
+
+.descriptionBottom {
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.editButton {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px 6px;
+  font-size: 10px;
+  line-height: 1.2;
+  z-index: 3;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  max-width: calc(100% - 8px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listModeTile {
+  width: 100% !important;
+}
+
+.scrollModeTile {
+  flex: 0 0 auto;
+}

@@ -2,5 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
   "port": 4321,
   "https": true,
-  "initialPage": "https://imcgrp.sharepoint.com/_layouts/workbench.aspx"
+  "hostname": "localhost",
+  "tryCreateDevCertificate": true,
+  "initialPage": "https://imcgrp.sharepoint.com/_layouts/workbench.aspx",
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://imcgrp.sharepoint.com/_layouts/workbench.aspx"
+    }
+  }
 }

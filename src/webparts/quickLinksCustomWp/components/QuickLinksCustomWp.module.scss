@@ -1,34 +1,76 @@
-@import 'pkg:@fluentui/react/dist/sass/References.scss';
-
 .quickLinksCustomWp {
   overflow: hidden;
   padding: 1em;
-  color: "[theme:bodyText, default: #323130]";
-  color: var(--bodyText);
-  &.teams {
-    font-family: $ms-font-family-fallbacks;
+  color: var(--bodyText, #323130);
+}
+
+.header {
+  color: #0078d4;
+  margin: 0 0 16px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.headerTheme {
+  color: var(--link, #0078d4);
+}
+
+.toolbar {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.toolbarActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.toolbarButton {
+  padding: 10px 18px;
+  background-color: transparent;
+  color: #311dee;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toolbarButtonSecondary {
+  color: #0078d4;
+
+  // SharePoint/Fluent resets text-decoration on button children; border-bottom is reliable.
+  .toolbarCategoryName {
+    display: inline;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+    line-height: 1.15;
   }
 }
 
-.welcome {
-  text-align: center;
+.emptyConfig {
+  font-style: italic;
+  color: #0078d4;
+  background-color: #f3f2f1;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-.welcomeImage {
+.loading {
+  font-style: italic;
+  color: #605e5c;
+}
+
+.error {
+  color: #a80000;
+  background-color: #fde7e9;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.layoutWrapper {
   width: 100%;
-  max-width: 420px;
-}
-
-.links {
-  a {
-    text-decoration: none;
-    color: "[theme:link, default:#03787c]";
-    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
-
-    &:hover {
-      text-decoration: underline;
-      color: "[theme:linkHovered, default: #014446]";
-      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
-    }
-  }
 }

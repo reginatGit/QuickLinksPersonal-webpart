@@ -1,4 +1,4 @@
-# quick-links-personal-webpart
+# quick-links-custom-wp
 
 ## Summary
 
